@@ -1,0 +1,11 @@
+# borrar el gitignore mal puesto
+git rm src/pages/.gitignore
+
+# crear el correcto
+echo node_modules/ > .gitignore
+echo .env >> .gitignore
+echo build/ >> .gitignore
+
+git add .gitignore
+git commit -m "Fix gitignore location (frontend)"
+git push
